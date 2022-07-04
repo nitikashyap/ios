@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="InviteHeaderCell" id="iN0-l3-epB" customClass="InviteHeaderCell" customModule="LoyalFoundry" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="333" height="35"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zV8-Vg-IaR">
+                    <rect key="frame" x="0.0" y="0.0" width="333" height="35"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Invite from Friends:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x5m-Qm-Jgd">
+                            <rect key="frame" x="0.0" y="0.0" width="333" height="35"/>
+                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="16"/>
+                            <color key="textColor" red="0.35686274509803922" green="0.35686274509803922" blue="0.35686274509803922" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="x5m-Qm-Jgd" firstAttribute="top" secondItem="zV8-Vg-IaR" secondAttribute="top" id="CL3-nn-L3V"/>
+                        <constraint firstItem="x5m-Qm-Jgd" firstAttribute="leading" secondItem="zV8-Vg-IaR" secondAttribute="leading" id="I8h-7f-rE5"/>
+                        <constraint firstAttribute="trailing" secondItem="x5m-Qm-Jgd" secondAttribute="trailing" id="Net-1u-lCY"/>
+                        <constraint firstAttribute="bottom" secondItem="x5m-Qm-Jgd" secondAttribute="bottom" id="d5B-X1-f1H"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="zV8-Vg-IaR" secondAttribute="trailing" id="1pQ-Vb-dCy"/>
+                <constraint firstItem="zV8-Vg-IaR" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Awx-v4-kQE"/>
+                <constraint firstItem="zV8-Vg-IaR" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="RXQ-u9-dHT"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="zV8-Vg-IaR" secondAttribute="bottom" id="iCr-bg-k04"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-103.62318840579711" y="-98.102678571428569"/>
+        </view>
+    </objects>
+</document>

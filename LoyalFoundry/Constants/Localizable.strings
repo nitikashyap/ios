@@ -1,0 +1,104 @@
+/* 
+  Localizable.strings
+  Catalyist
+
+  Created by Call Soft on 29/03/22.
+  
+*/
+
+// MARK: - Constant Text
+OFFILINE_INTERNET = "There is no internet connection. Please try again later.";
+ERROR_OCCURED = "There is some error occured. Please try again later.";
+ERROR = "Error!";
+SUCCESS = "Success!";
+
+OK = "Ok";
+CANCEL = "Cancel";
+CUSTOM_TEXT = "Custom ";
+DONE = "Done";
+FORGET_PASSWORD = "Forget Password";
+FORGOT = "Forgot ";
+NEW_USER_SIGN_UP = "New User? Sign Up";
+NEW_USER = "New User? ";
+SIGNUP = "Sign Up";
+EXISTING_USER_SIGN_IN = "Existing User? Sign In";
+EXISTING_USER = "Existing User? ";
+SIGN_IN = "Sign In";
+VERIFICATION_EMAIL = "Verification Code on your Email";
+VERIFICATION_EMAIL_ID = "We just send the 4 digits code on your registered email";
+CHECK_EMAIL = "Check Your Email";
+SENT_PASSWORD = "we have sent a password recover instructions to your email";
+PASSWORD_RESET_DONE = "Password Reset Done!";
+PASSWORD_UPDATE = "Your Password has been updated";
+RESET_PASSWORD = "Reset Password";
+ENABLE_LOCATION = "Please enable locations to track your location.";
+LOG_OUT = "Are you sure you want to logout?";
+DONT_HAVE_CAMERA = "You don't have camera";
+WARNING = "Warning!";
+SELECTTOUPLOAD = "Select to upload";
+CAMERA = "Camera";
+CHOOSE = "Choose";
+DOB = "Date Of Birth";
+RELATION = "Relation";
+TASK_NAME = "Task Name";
+DESCRIPTION = "Description";
+ASSIGN_TOO = "Assign To";
+PRIORITY = "Priority";
+START_DATE = "Start Date";
+END_DATE = "End Date";
+START_TIME = "Start Time";
+END_TIME = "End Time";
+ENTER_REWARD_POINT = "Enter Reward Point";
+GALLERY = "Gallery";
+REPEAT = "Repeat";
+YES = "Yes";
+NO = "No";
+FAMILY_MEMBER = "Family Member";
+PRIORITY_TASK = "Task Priority";
+THEME = "Theme";
+REWARD_POINTS = "Reward Point";
+CONGRATULATION = "Congratulations!";
+
+MY_PROFILE = "My Profile";
+SETTING = "Setting";
+ABOUT_US = "About Us";
+TERMS_CONDITION = "Terms & Conditions";
+PRIVACY_POLICY = "Privacy Policy";
+CONTACT_US = "Contact Us";
+PROFILE = "Profile";
+CHANGE_PASSWORD = "Change Password";
+NOTIFICATIONS = "Notifications";
+PRODUCT_DETAILS = "Product Details";
+MY_BASKETS = "My Baskets";
+
+
+MY_CART = "My Cart";
+
+
+
+// MARK: - Alert Message
+ENTER_YOUR_NAME = "Please enter your name";
+ENTER_YOUR_EMAIL = "Please enter your email Id";
+ENTER_CORRECT_EMAIL ="Invalid email Id";
+ENTER_PASSWORD = "Please enter password.";
+ENTER_YOUR_MOBILE = "Please enter your mobile number";
+ENTER_YOUR_PASSWORD = "Please enter your password";
+ENTER_NEW_PASSWORD = "Please enter your new Password";
+ENTER_CONFIRM_PASSWORD = "Please enter your confirm Password";
+ENTER_CORRECT_MOBILE = "Invalid Mobile Number";
+ENTER_CORRECT_PASSWORD = "Invalid Password";
+ENTER_CORRECT_CONFIR_PASSWORD = "Invalid Confirm Password";
+ENTER_CORRECT_NEW_PASSWORD = "Invalid New Password";
+PASSWORD_NOT_MATCH = "Password & Confirm password should be same";
+NEW_PASSWORD_NOT_MATCH = "Password Not Same";
+INVALID_CREDENTIAL = "Invalid Credential";
+IMAGE_UPLOAD_SUCCESSFULLY = "Image Upload Succesfully";
+
+
+// MARK: - Placeholder Text
+EMAIL_ADDRESS = "Email Address";
+PASSWORD = "Password";
+ENTER_NEW_PASSWORD = "Enter New Password";
+CONFIRM_PASSWORD = "Confirm Password";
+CREATE_NEW_PASSWORD = "Create New password";
+

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Horizon Type - AcherusFeral-Bold.otf">
+            <string>AcherusFeral-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CompletedGameCell" rowHeight="75" id="KGk-i7-Jjw" customClass="CompletedGameCell" customModule="LoyalFoundry" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="314" height="75"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="314" height="75"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Jz-aA-HdK">
+                        <rect key="frame" x="0.0" y="0.0" width="314" height="59"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lbn-d4-8Qb">
+                                <rect key="frame" x="0.0" y="0.0" width="314" height="59"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="JpH-NX-mKw">
+                                        <rect key="frame" x="16" y="6" width="282" height="47"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="wKW-fx-CYi">
+                                                <rect key="frame" x="0.0" y="0.5" width="170" height="46"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Us-Hm-GOU">
+                                                        <rect key="frame" x="0.0" y="0.0" width="20" height="46"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="20" id="buD-DJ-tEl"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" name="AcherusFeral-Bold" family="Acherus Feral" pointSize="16"/>
+                                                        <color key="textColor" red="0.64313725489999995" green="0.3294117647" blue="0.023529411760000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="leaderBoardImg1" translatesAutoresizingMaskIntoConstraints="NO" id="Zcz-KZ-xMT">
+                                                        <rect key="frame" x="27" y="0.0" width="46" height="46"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="46" id="b4A-zj-bOu"/>
+                                                            <constraint firstAttribute="width" constant="46" id="okg-eu-D6T"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Alex Ensina" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Rt-no-4rp">
+                                                        <rect key="frame" x="80" y="0.0" width="90" height="46"/>
+                                                        <fontDescription key="fontDescription" name="AcherusFeral-Bold" family="Acherus Feral" pointSize="12"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="170" id="aYr-GA-7MP"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="BDP-KV-dC0">
+                                                <rect key="frame" x="179.5" y="7.5" width="33" height="32"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 126" translatesAutoresizingMaskIntoConstraints="NO" id="8Uz-DN-fcM">
+                                                        <rect key="frame" x="0.0" y="0.0" width="33" height="32"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="33" id="gDv-qX-veT"/>
+                                                            <constraint firstAttribute="height" constant="32" id="zVN-Ey-GkO"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="uMK-BC-foF">
+                                                <rect key="frame" x="222" y="18.5" width="60" height="10"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="42,123" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GKc-9m-2XX">
+                                                        <rect key="frame" x="0.0" y="0.0" width="44" height="10"/>
+                                                        <fontDescription key="fontDescription" name="AcherusFeral-Bold" family="Acherus Feral" pointSize="12"/>
+                                                        <color key="textColor" red="0.7843137255" green="0.7843137255" blue="0.7843137255" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 217" translatesAutoresizingMaskIntoConstraints="NO" id="poV-0d-pr8">
+                                                        <rect key="frame" x="50" y="0.0" width="10" height="10"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="10" id="K0x-e9-wg6"/>
+                                                            <constraint firstAttribute="width" constant="10" id="OR6-Vs-e01"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="60" id="jFX-b9-LgA"/>
+                                                </constraints>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="JpH-NX-mKw" secondAttribute="trailing" constant="16" id="LLM-Sc-WrY"/>
+                                    <constraint firstItem="JpH-NX-mKw" firstAttribute="leading" secondItem="lbn-d4-8Qb" secondAttribute="leading" constant="16" id="fQo-or-ZEk"/>
+                                    <constraint firstAttribute="bottom" secondItem="JpH-NX-mKw" secondAttribute="bottom" constant="6" id="qqI-Us-AQh"/>
+                                    <constraint firstItem="JpH-NX-mKw" firstAttribute="top" secondItem="lbn-d4-8Qb" secondAttribute="top" constant="6" id="rcY-cC-sbV"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="lbn-d4-8Qb" firstAttribute="leading" secondItem="8Jz-aA-HdK" secondAttribute="leading" id="6Ir-Lv-9rd"/>
+                            <constraint firstAttribute="trailing" secondItem="lbn-d4-8Qb" secondAttribute="trailing" id="I4P-vK-g15"/>
+                            <constraint firstAttribute="bottom" secondItem="lbn-d4-8Qb" secondAttribute="bottom" id="S9o-dQ-3Uh"/>
+                            <constraint firstItem="lbn-d4-8Qb" firstAttribute="top" secondItem="8Jz-aA-HdK" secondAttribute="top" id="mEs-4e-LmN"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstItem="8Jz-aA-HdK" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="0tr-pe-9hK"/>
+                    <constraint firstItem="8Jz-aA-HdK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="NAB-xs-2fx"/>
+                    <constraint firstAttribute="trailing" secondItem="8Jz-aA-HdK" secondAttribute="trailing" id="aCK-7r-mvB"/>
+                    <constraint firstAttribute="bottom" secondItem="8Jz-aA-HdK" secondAttribute="bottom" constant="16" id="atj-4s-sbN"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="bgView" destination="8Jz-aA-HdK" id="Qhj-uB-lah"/>
+                <outlet property="profileImage" destination="Zcz-KZ-xMT" id="iTh-cc-Ogo"/>
+                <outlet property="profileNameLbl" destination="1Rt-no-4rp" id="etX-U3-E1s"/>
+                <outlet property="profilePointLbl" destination="2Us-Hm-GOU" id="FZz-7r-2vz"/>
+                <outlet property="starLbl" destination="GKc-9m-2XX" id="sdm-VR-CCM"/>
+                <outlet property="trophyImage" destination="8Uz-DN-fcM" id="xtD-xd-eSN"/>
+            </connections>
+            <point key="canvasLocation" x="178.2608695652174" y="31.808035714285712"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Group 126" width="33" height="32"/>
+        <image name="Group 217" width="10" height="10"/>
+        <image name="leaderBoardImg1" width="46.5" height="46.5"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

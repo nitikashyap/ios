@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Player PointVC-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="PlayerPointVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="PlayerPointVC" customModule="LoyalFoundry" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="n7W-zE-EAs">
+                                <rect key="frame" x="19" y="134" width="376" height="682"/>
+                                <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="n7W-zE-EAs" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="19" id="Lqs-vY-lr8"/>
+                            <constraint firstAttribute="bottom" secondItem="n7W-zE-EAs" secondAttribute="bottom" constant="80" id="iZQ-13-Thc"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="n7W-zE-EAs" secondAttribute="trailing" constant="19" id="j6w-v1-aLm"/>
+                            <constraint firstItem="n7W-zE-EAs" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="90" id="lRV-0E-EP1"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="playerPointsTblView" destination="n7W-zE-EAs" id="Mft-Yg-Kfw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-841" y="104"/>
+        </scene>
+        <!--Completd GameVC-->
+        <scene sceneID="N77-jk-zcy">
+            <objects>
+                <viewController storyboardIdentifier="CompletdGameVC" id="6Wd-aP-HV3" customClass="CompletdGameVC" customModule="LoyalFoundry" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Xy9-o2-Fbr">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="F2x-2e-Eaj">
+                                <rect key="frame" x="19" y="99" width="376" height="797"/>
+                                <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Yuw-ke-2dj"/>
+                        <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="F2x-2e-Eaj" secondAttribute="bottom" id="Kfw-0q-nKP"/>
+                            <constraint firstItem="F2x-2e-Eaj" firstAttribute="leading" secondItem="Yuw-ke-2dj" secondAttribute="leading" constant="19" id="b7U-Bo-VHB"/>
+                            <constraint firstItem="F2x-2e-Eaj" firstAttribute="top" secondItem="Yuw-ke-2dj" secondAttribute="top" constant="55" id="beM-dH-nA5"/>
+                            <constraint firstItem="Yuw-ke-2dj" firstAttribute="trailing" secondItem="F2x-2e-Eaj" secondAttribute="trailing" constant="19" id="rur-GL-tGG"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="completedGameTbl" destination="F2x-2e-Eaj" id="XaD-da-6Dm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OSx-Ox-lec" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-171.01449275362319" y="103.79464285714285"/>
+        </scene>
+        <!--Completed ChampionVC-->
+        <scene sceneID="kA8-Nc-3xD">
+            <objects>
+                <viewController storyboardIdentifier="CompletedChampionVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="IdX-Hz-HGL" customClass="CompletedChampionVC" customModule="LoyalFoundry" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sLR-bG-Znc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="cGE-Yw-JxH">
+                                <rect key="frame" x="19" y="99" width="376" height="797"/>
+                                <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="UFI-Ec-xfC"/>
+                        <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="cGE-Yw-JxH" firstAttribute="leading" secondItem="UFI-Ec-xfC" secondAttribute="leading" constant="19" id="0hp-Da-Aqy"/>
+                            <constraint firstItem="UFI-Ec-xfC" firstAttribute="trailing" secondItem="cGE-Yw-JxH" secondAttribute="trailing" constant="19" id="3On-Xl-pjM"/>
+                            <constraint firstItem="cGE-Yw-JxH" firstAttribute="top" secondItem="UFI-Ec-xfC" secondAttribute="top" constant="55" id="hd4-Sl-3pO"/>
+                            <constraint firstAttribute="bottom" secondItem="cGE-Yw-JxH" secondAttribute="bottom" id="sV5-ME-GCO"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="champioTable" destination="cGE-Yw-JxH" id="qDy-Nn-Xnk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E30-KH-8ao" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="503" y="104"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="SimpleNabBar" id="iN0-l3-epB" customClass="SimpleNabBar" customModule="LoyalFoundry" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="334" height="75"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="daD-Td-t15">
+                    <rect key="frame" x="0.0" y="0.0" width="334" height="75"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M36-kH-u5A">
+                            <rect key="frame" x="0.0" y="0.0" width="51" height="46"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="51" id="A02-t0-cK6"/>
+                                <constraint firstAttribute="height" constant="46" id="sN5-B3-KjR"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title=" " image="navBackBtn"/>
+                            <buttonConfiguration key="configuration" style="plain" image="navBackBtn" title=" "/>
+                            <connections>
+                                <action selector="backBtnActn:" destination="iN0-l3-epB" eventType="touchUpInside" id="0qz-Ce-FBD"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ckA-5b-BFR">
+                            <rect key="frame" x="0.0" y="46" width="334" height="29"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="16"/>
+                            <color key="textColor" red="0.29411764705882354" green="0.30196078431372547" blue="0.30980392156862746" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="M36-kH-u5A" firstAttribute="leading" secondItem="daD-Td-t15" secondAttribute="leading" id="5Fi-Zy-qxS"/>
+                        <constraint firstItem="ckA-5b-BFR" firstAttribute="top" secondItem="M36-kH-u5A" secondAttribute="bottom" id="AEP-3c-Oo5"/>
+                        <constraint firstAttribute="bottom" secondItem="ckA-5b-BFR" secondAttribute="bottom" id="E3s-dh-tb3"/>
+                        <constraint firstAttribute="trailing" secondItem="ckA-5b-BFR" secondAttribute="trailing" id="OGv-Gr-fjC"/>
+                        <constraint firstItem="M36-kH-u5A" firstAttribute="top" secondItem="daD-Td-t15" secondAttribute="top" id="VLM-Ic-egd"/>
+                        <constraint firstItem="ckA-5b-BFR" firstAttribute="leading" secondItem="daD-Td-t15" secondAttribute="leading" id="vyc-HW-OeW"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="daD-Td-t15" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="4sU-zt-GxM"/>
+                <constraint firstAttribute="bottom" secondItem="daD-Td-t15" secondAttribute="bottom" id="BA8-2Y-d99"/>
+                <constraint firstItem="daD-Td-t15" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="CJo-9B-xOr"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="daD-Td-t15" secondAttribute="trailing" id="dP9-rJ-XVs"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="BackBtn" destination="M36-kH-u5A" id="KWb-Re-YJX"/>
+                <outlet property="navBarLbl" destination="ckA-5b-BFR" id="8nz-jJ-r5a"/>
+            </connections>
+            <point key="canvasLocation" x="-5.7971014492753632" y="-111.49553571428571"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="navBackBtn" width="51.5" height="46"/>
+    </resources>
+</document>

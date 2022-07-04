@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main ChatVC-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="MainChatVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Y6W-OH-hqX" customClass="MainChatVC" customModule="LoyalFoundry" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ChatingImageData" translatesAutoresizingMaskIntoConstraints="NO" id="X0u-Vn-uAM">
+                                <rect key="frame" x="0.0" y="129" width="414" height="767"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U5c-pu-PNm">
+                                <rect key="frame" x="0.0" y="127.5" width="414" height="1.5"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1.5" id="Cdx-TC-E7q"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="X0u-Vn-uAM" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="675-II-fAg"/>
+                            <constraint firstItem="X0u-Vn-uAM" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="85" id="8GX-un-47e"/>
+                            <constraint firstItem="X0u-Vn-uAM" firstAttribute="top" secondItem="U5c-pu-PNm" secondAttribute="bottom" id="Bxi-0O-nRh"/>
+                            <constraint firstItem="U5c-pu-PNm" firstAttribute="leading" secondItem="5EZ-qb-Rvc" secondAttribute="leading" id="E82-g8-SxQ"/>
+                            <constraint firstItem="X0u-Vn-uAM" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="Hbo-5a-1JD"/>
+                            <constraint firstItem="U5c-pu-PNm" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="Jhe-Ht-neY"/>
+                            <constraint firstAttribute="bottom" secondItem="X0u-Vn-uAM" secondAttribute="bottom" id="d2L-7V-4YA"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="121.73913043478262" y="103.79464285714285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="ChatingImageData" width="360" height="486"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

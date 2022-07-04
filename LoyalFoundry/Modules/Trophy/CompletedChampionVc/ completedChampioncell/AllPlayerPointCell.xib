@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Horizon Type - AcherusFeral-Bold.otf">
+            <string>AcherusFeral-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AllPlayerPointCell" rowHeight="38" id="KGk-i7-Jjw" customClass="AllPlayerPointCell" customModule="LoyalFoundry" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="361" height="38"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="361" height="38"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="arz-l5-WLz">
+                        <rect key="frame" x="0.0" y="0.0" width="361" height="38"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Deer" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jNE-1F-F3a">
+                                <rect key="frame" x="16" y="16" width="33" height="20"/>
+                                <fontDescription key="fontDescription" name="AcherusFeral-Bold" family="Acherus Feral" pointSize="14"/>
+                                <color key="textColor" red="0.64313725489999995" green="0.3294117647" blue="0.023529411760000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="fOA-IO-32W">
+                                <rect key="frame" x="170" y="17.5" width="31" height="17"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="13" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dcX-im-cUK">
+                                        <rect key="frame" x="0.0" y="0.0" width="17" height="17"/>
+                                        <fontDescription key="fontDescription" name="AcherusFeral-Bold" family="Acherus Feral" pointSize="12"/>
+                                        <color key="textColor" red="0.3294117647" green="0.18823529410000001" blue="0.16862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 136" translatesAutoresizingMaskIntoConstraints="NO" id="nfx-ym-dm9">
+                                        <rect key="frame" x="18" y="2" width="13" height="13"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="13" id="E5B-8J-za3"/>
+                                            <constraint firstAttribute="height" constant="13" id="rQm-mk-e07"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12:45pm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GKd-ga-uRN">
+                                <rect key="frame" x="296.5" y="16" width="48.5" height="17"/>
+                                <fontDescription key="fontDescription" name="AcherusFeral-Bold" family="Acherus Feral" pointSize="12"/>
+                                <color key="textColor" red="0.3294117647" green="0.18823529410000001" blue="0.16862745100000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="GKd-ga-uRN" firstAttribute="top" secondItem="arz-l5-WLz" secondAttribute="top" constant="16" id="CcN-KF-ryi"/>
+                            <constraint firstAttribute="trailing" secondItem="GKd-ga-uRN" secondAttribute="trailing" constant="16" id="ZzY-EM-MGW"/>
+                            <constraint firstItem="fOA-IO-32W" firstAttribute="centerX" secondItem="arz-l5-WLz" secondAttribute="centerX" constant="5" id="fy3-hf-jFH"/>
+                            <constraint firstItem="jNE-1F-F3a" firstAttribute="leading" secondItem="arz-l5-WLz" secondAttribute="leading" constant="16" id="kFC-k9-sZF"/>
+                            <constraint firstItem="fOA-IO-32W" firstAttribute="centerY" secondItem="jNE-1F-F3a" secondAttribute="centerY" id="vGn-Qx-M7x"/>
+                            <constraint firstItem="jNE-1F-F3a" firstAttribute="top" secondItem="arz-l5-WLz" secondAttribute="top" constant="16" id="yPc-8D-Cav"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="arz-l5-WLz" secondAttribute="trailing" id="OPw-50-AmM"/>
+                    <constraint firstAttribute="bottom" secondItem="arz-l5-WLz" secondAttribute="bottom" id="P42-7F-GiF"/>
+                    <constraint firstItem="arz-l5-WLz" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="xPt-5G-SDy"/>
+                    <constraint firstItem="arz-l5-WLz" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="xrv-gc-vlP"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="bgView" destination="arz-l5-WLz" id="O6L-w5-GDx"/>
+                <outlet property="pointLbl" destination="dcX-im-cUK" id="Yo5-p4-89x"/>
+                <outlet property="targetLbl" destination="jNE-1F-F3a" id="KAI-8M-W6e"/>
+                <outlet property="timeLbl" destination="GKd-ga-uRN" id="VPn-Bd-cZW"/>
+            </connections>
+            <point key="canvasLocation" x="167.39130434782609" y="72.321428571428569"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Group 136" width="9" height="9"/>
+    </resources>
+</document>

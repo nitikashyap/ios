@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Black.ttf">
+            <string>Roboto-Black</string>
+        </array>
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CurrentCellTableViewCell" rowHeight="111" id="KGk-i7-Jjw" customClass="CurrentCellTableViewCell" customModule="LoyalFoundry" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="374" height="111"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="374" height="111"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vrH-Oq-JoY">
+                        <rect key="frame" x="0.0" y="0.0" width="374" height="96"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="calanderBgimage1" translatesAutoresizingMaskIntoConstraints="NO" id="a2J-zb-snP">
+                                <rect key="frame" x="0.0" y="0.0" width="374" height="96"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Turkey Hunt 2021" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oaC-vq-h2w">
+                                <rect key="frame" x="116.5" y="16" width="141" height="21.5"/>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="18"/>
+                                <color key="textColor" name="cellColourlabl"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Oct 14th - 17th , 2021" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bsP-09-BzS">
+                                <rect key="frame" x="24" y="63.5" width="114" height="15"/>
+                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="12"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tI7-uT-0BN">
+                                <rect key="frame" x="320" y="64.5" width="13" height="13"/>
+                                <fontDescription key="fontDescription" name="Roboto-Black" family="Roboto" pointSize="11"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="calanderimage4" translatesAutoresizingMaskIntoConstraints="NO" id="xgH-VK-Pax">
+                                <rect key="frame" x="337" y="63" width="21" height="16"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="16" id="Vuw-nK-vOe"/>
+                                    <constraint firstAttribute="width" constant="21" id="s8O-wd-gUg"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="oaC-vq-h2w" firstAttribute="centerX" secondItem="vrH-Oq-JoY" secondAttribute="centerX" id="0Yy-MJ-eaI"/>
+                            <constraint firstItem="xgH-VK-Pax" firstAttribute="centerY" secondItem="tI7-uT-0BN" secondAttribute="centerY" id="5LT-AP-DRx"/>
+                            <constraint firstItem="bsP-09-BzS" firstAttribute="leading" secondItem="vrH-Oq-JoY" secondAttribute="leading" constant="24" id="7ba-Wq-16F"/>
+                            <constraint firstItem="oaC-vq-h2w" firstAttribute="top" secondItem="vrH-Oq-JoY" secondAttribute="top" constant="16" id="882-EB-1de"/>
+                            <constraint firstAttribute="trailing" secondItem="a2J-zb-snP" secondAttribute="trailing" id="8Hc-d2-MBE"/>
+                            <constraint firstItem="a2J-zb-snP" firstAttribute="leading" secondItem="vrH-Oq-JoY" secondAttribute="leading" id="Nfv-nN-RKV"/>
+                            <constraint firstItem="bsP-09-BzS" firstAttribute="top" secondItem="oaC-vq-h2w" secondAttribute="bottom" constant="26" id="PZb-49-wAZ"/>
+                            <constraint firstItem="a2J-zb-snP" firstAttribute="top" secondItem="vrH-Oq-JoY" secondAttribute="top" id="TSt-kZ-69i"/>
+                            <constraint firstAttribute="bottom" secondItem="a2J-zb-snP" secondAttribute="bottom" id="nna-3t-kp7"/>
+                            <constraint firstItem="xgH-VK-Pax" firstAttribute="leading" secondItem="tI7-uT-0BN" secondAttribute="trailing" constant="4" id="qoq-qx-QeZ"/>
+                            <constraint firstItem="tI7-uT-0BN" firstAttribute="centerY" secondItem="bsP-09-BzS" secondAttribute="centerY" id="scI-e4-NvO"/>
+                            <constraint firstAttribute="trailing" secondItem="xgH-VK-Pax" secondAttribute="trailing" constant="16" id="sff-ib-eZb"/>
+                            <constraint firstAttribute="bottom" secondItem="bsP-09-BzS" secondAttribute="bottom" constant="17.5" id="xVn-4c-uJy"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="vrH-Oq-JoY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="5DW-q9-XVI"/>
+                    <constraint firstAttribute="trailing" secondItem="vrH-Oq-JoY" secondAttribute="trailing" id="JeO-nl-Mnm"/>
+                    <constraint firstAttribute="bottom" secondItem="vrH-Oq-JoY" secondAttribute="bottom" constant="15" id="KFT-Nt-rtO"/>
+                    <constraint firstItem="vrH-Oq-JoY" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="sKa-hR-E9b"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="dateLbl" destination="bsP-09-BzS" id="Mas-0L-fU2"/>
+                <outlet property="headerLbl" destination="oaC-vq-h2w" id="kbL-tK-CGe"/>
+                <outlet property="imageViewOtlt" destination="a2J-zb-snP" id="Elp-FU-g75"/>
+                <outlet property="personPoint" destination="tI7-uT-0BN" id="XuP-X2-y31"/>
+            </connections>
+            <point key="canvasLocation" x="288.40579710144931" y="61.272321428571423"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="calanderBgimage1" width="312" height="94"/>
+        <image name="calanderimage4" width="21" height="16"/>
+        <namedColor name="cellColourlabl">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

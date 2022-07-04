@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Horizon Type - AcherusFeral-Bold.otf">
+            <string>AcherusFeral-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="PastPlayerCell" rowHeight="77" id="KGk-i7-Jjw" customClass="PastPlayerCell" customModule="LoyalFoundry" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="322" height="77"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="322" height="77"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eWa-lh-DL2">
+                        <rect key="frame" x="0.0" y="17" width="322" height="60"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="player1" translatesAutoresizingMaskIntoConstraints="NO" id="3Jj-fH-Lji">
+                                <rect key="frame" x="16" y="7" width="46" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="TwN-SD-wM2"/>
+                                    <constraint firstAttribute="width" constant="46" id="utu-WV-J2p"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alistair luis" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GSb-zv-JzZ">
+                                <rect key="frame" x="77" y="19.5" width="82" height="21"/>
+                                <fontDescription key="fontDescription" name="AcherusFeral-Bold" family="Acherus Feral" pointSize="15"/>
+                                <color key="textColor" name="TextColour"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BlueImage" translatesAutoresizingMaskIntoConstraints="NO" id="FsH-Lr-Mq8">
+                                <rect key="frame" x="276" y="14" width="32" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="32" id="Q8c-Iz-rcp"/>
+                                    <constraint firstAttribute="height" constant="32" id="WRh-9Z-EeA"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="3Jj-fH-Lji" firstAttribute="top" secondItem="eWa-lh-DL2" secondAttribute="top" constant="7" id="5ab-nr-AhA"/>
+                            <constraint firstAttribute="trailing" secondItem="FsH-Lr-Mq8" secondAttribute="trailing" constant="14" id="CVW-fN-WtF"/>
+                            <constraint firstItem="FsH-Lr-Mq8" firstAttribute="centerY" secondItem="GSb-zv-JzZ" secondAttribute="centerY" id="IUB-7U-bZW"/>
+                            <constraint firstItem="3Jj-fH-Lji" firstAttribute="leading" secondItem="eWa-lh-DL2" secondAttribute="leading" constant="16" id="IhK-TO-oNW"/>
+                            <constraint firstAttribute="bottom" secondItem="3Jj-fH-Lji" secondAttribute="bottom" constant="7" id="Zfv-bY-AKL"/>
+                            <constraint firstItem="GSb-zv-JzZ" firstAttribute="centerY" secondItem="3Jj-fH-Lji" secondAttribute="centerY" id="cNs-bb-Iu8"/>
+                            <constraint firstItem="GSb-zv-JzZ" firstAttribute="leading" secondItem="3Jj-fH-Lji" secondAttribute="trailing" constant="15" id="crt-qd-vll"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstItem="eWa-lh-DL2" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="17" id="3zc-ya-QGk"/>
+                    <constraint firstItem="eWa-lh-DL2" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="EU9-1H-Q4q"/>
+                    <constraint firstAttribute="trailing" secondItem="eWa-lh-DL2" secondAttribute="trailing" id="at9-aX-sB2"/>
+                    <constraint firstAttribute="bottom" secondItem="eWa-lh-DL2" secondAttribute="bottom" id="h0g-kJ-xT9"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="bgView" destination="eWa-lh-DL2" id="tiM-9U-ZYb"/>
+                <outlet property="profileImage" destination="3Jj-fH-Lji" id="MbU-8O-Al7"/>
+                <outlet property="profileNameLbl" destination="GSb-zv-JzZ" id="pUS-r2-1ev"/>
+                <outlet property="trophyImage" destination="FsH-Lr-Mq8" id="ydw-3s-C5o"/>
+            </connections>
+            <point key="canvasLocation" x="139.13043478260872" y="119.53125"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="BlueImage" width="33" height="32"/>
+        <image name="player1" width="46.5" height="46.5"/>
+        <namedColor name="TextColour">
+            <color red="0.20000000298023224" green="0.23899999260902405" blue="0.1289999932050705" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

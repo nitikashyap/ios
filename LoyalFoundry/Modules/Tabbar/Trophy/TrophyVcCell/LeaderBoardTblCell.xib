@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Horizon Type - AcherusFeral-Bold.otf">
+            <string>AcherusFeral-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="LeaderBoardTblCell" rowHeight="133" id="KGk-i7-Jjw" customClass="LeaderBoardTblCell" customModule="LoyalFoundry" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="361" height="74"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="361" height="74"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EVs-A0-aMn">
+                        <rect key="frame" x="19" y="0.0" width="323" height="59"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yYh-z7-hP5">
+                                <rect key="frame" x="16" y="18" width="9.5" height="23"/>
+                                <fontDescription key="fontDescription" name="AcherusFeral-Bold" family="Acherus Feral" pointSize="16"/>
+                                <color key="textColor" red="0.64313725490196072" green="0.32941176470588235" blue="0.023529411764705882" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="leaderBoardImg1" translatesAutoresizingMaskIntoConstraints="NO" id="eOx-U9-lUj">
+                                <rect key="frame" x="32.5" y="7" width="46" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="46" id="Bwz-gK-2aO"/>
+                                    <constraint firstAttribute="height" constant="45" id="RAf-zR-EP8"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alex Ensina" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6fD-Jn-Wml">
+                                <rect key="frame" x="85.5" y="21" width="68" height="17"/>
+                                <fontDescription key="fontDescription" name="AcherusFeral-Bold" family="Acherus Feral" pointSize="12"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 126" translatesAutoresizingMaskIntoConstraints="NO" id="b2i-Ze-il6">
+                                <rect key="frame" x="193" y="13.5" width="33" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="7tW-Em-AXi"/>
+                                    <constraint firstAttribute="width" constant="33" id="df7-RG-458"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="42,123" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aLe-6A-smZ">
+                                <rect key="frame" x="251" y="21" width="36" height="17"/>
+                                <fontDescription key="fontDescription" name="AcherusFeral-Bold" family="Acherus Feral" pointSize="12"/>
+                                <color key="textColor" red="0.78431372549019607" green="0.78431372549019607" blue="0.78431372549019607" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Group 217" translatesAutoresizingMaskIntoConstraints="NO" id="hQ2-wK-MKx">
+                                <rect key="frame" x="293" y="24.5" width="10" height="10"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="hQ2-wK-MKx" firstAttribute="leading" secondItem="aLe-6A-smZ" secondAttribute="trailing" constant="6" id="2cL-CU-6zG"/>
+                            <constraint firstItem="eOx-U9-lUj" firstAttribute="top" secondItem="EVs-A0-aMn" secondAttribute="top" constant="7" id="CoI-lE-cu9"/>
+                            <constraint firstItem="yYh-z7-hP5" firstAttribute="centerY" secondItem="eOx-U9-lUj" secondAttribute="centerY" id="Cqc-qZ-AGL"/>
+                            <constraint firstAttribute="trailing" secondItem="hQ2-wK-MKx" secondAttribute="trailing" constant="20" id="FB5-nJ-aVU"/>
+                            <constraint firstItem="6fD-Jn-Wml" firstAttribute="centerY" secondItem="eOx-U9-lUj" secondAttribute="centerY" id="LDl-bG-T0U"/>
+                            <constraint firstItem="aLe-6A-smZ" firstAttribute="leading" secondItem="b2i-Ze-il6" secondAttribute="trailing" constant="25" id="Ss7-hC-b2X"/>
+                            <constraint firstItem="hQ2-wK-MKx" firstAttribute="centerY" secondItem="aLe-6A-smZ" secondAttribute="centerY" id="Tkw-2u-Ocu"/>
+                            <constraint firstItem="6fD-Jn-Wml" firstAttribute="leading" secondItem="eOx-U9-lUj" secondAttribute="trailing" constant="7" id="USc-s9-ylp"/>
+                            <constraint firstItem="aLe-6A-smZ" firstAttribute="centerY" secondItem="b2i-Ze-il6" secondAttribute="centerY" id="WUk-qg-7N1"/>
+                            <constraint firstItem="yYh-z7-hP5" firstAttribute="leading" secondItem="EVs-A0-aMn" secondAttribute="leading" constant="16" id="dhl-fl-z4x"/>
+                            <constraint firstAttribute="bottom" secondItem="eOx-U9-lUj" secondAttribute="bottom" constant="7" id="fxu-Sn-wCQ"/>
+                            <constraint firstItem="b2i-Ze-il6" firstAttribute="centerY" secondItem="eOx-U9-lUj" secondAttribute="centerY" id="gxK-de-jI8"/>
+                            <constraint firstItem="eOx-U9-lUj" firstAttribute="leading" secondItem="yYh-z7-hP5" secondAttribute="trailing" constant="7" id="qRI-B5-mnL"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="EVs-A0-aMn" secondAttribute="bottom" constant="15" id="7Zw-tS-6Oe"/>
+                    <constraint firstItem="EVs-A0-aMn" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="NrY-Ld-ctt"/>
+                    <constraint firstAttribute="trailing" secondItem="EVs-A0-aMn" secondAttribute="trailing" constant="19" id="YaQ-Tg-Q4g"/>
+                    <constraint firstItem="EVs-A0-aMn" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="19" id="mI7-EA-N0m"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="awardImg" destination="b2i-Ze-il6" id="XA2-2e-5cZ"/>
+                <outlet property="playerBgView" destination="EVs-A0-aMn" id="5iT-Te-CxK"/>
+                <outlet property="playerImg" destination="eOx-U9-lUj" id="5u8-cf-gnx"/>
+                <outlet property="playerName" destination="6fD-Jn-Wml" id="wUr-fO-xry"/>
+                <outlet property="positionLbl" destination="yYh-z7-hP5" id="eHq-fq-Zla"/>
+                <outlet property="score" destination="aLe-6A-smZ" id="ZZc-lL-hZD"/>
+            </connections>
+            <point key="canvasLocation" x="165.94202898550725" y="72.321428571428569"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Group 126" width="33" height="32"/>
+        <image name="Group 217" width="10" height="10"/>
+        <image name="leaderBoardImg1" width="46.5" height="46.5"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

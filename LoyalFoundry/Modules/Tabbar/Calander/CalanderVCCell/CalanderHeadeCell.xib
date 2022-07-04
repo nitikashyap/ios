@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" restorationIdentifier="CalanderHeadeCell" id="iN0-l3-epB" customClass="CalanderHeadeCell" customModule="LoyalFoundry" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="298" height="39"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KlR-GN-cJs">
+                    <rect key="frame" x="0.0" y="0.0" width="298" height="39"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lsx-1u-7xS">
+                            <rect key="frame" x="0.0" y="0.0" width="298" height="24"/>
+                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="16"/>
+                            <color key="textColor" name="headerCellcolour"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0rQ-jI-uJ6">
+                            <rect key="frame" x="218" y="-3.5" width="80" height="31"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="80" id="7O7-3Q-mhy"/>
+                            </constraints>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Hide">
+                                <color key="baseForegroundColor" name="headerCellcolour"/>
+                            </buttonConfiguration>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="lsx-1u-7xS" secondAttribute="bottom" constant="15" id="LQc-1K-2PN"/>
+                        <constraint firstAttribute="trailing" secondItem="0rQ-jI-uJ6" secondAttribute="trailing" id="VaH-MP-Afk"/>
+                        <constraint firstItem="lsx-1u-7xS" firstAttribute="leading" secondItem="KlR-GN-cJs" secondAttribute="leading" id="XBy-Bw-Tg1"/>
+                        <constraint firstItem="0rQ-jI-uJ6" firstAttribute="centerY" secondItem="lsx-1u-7xS" secondAttribute="centerY" id="qB6-Q4-tNE"/>
+                        <constraint firstItem="lsx-1u-7xS" firstAttribute="top" secondItem="KlR-GN-cJs" secondAttribute="top" id="zN6-7l-CEi"/>
+                        <constraint firstAttribute="trailing" secondItem="lsx-1u-7xS" secondAttribute="trailing" id="zyf-BW-hhK"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="KlR-GN-cJs" secondAttribute="trailing" id="9MC-DU-3Do"/>
+                <constraint firstItem="KlR-GN-cJs" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="BHG-DD-P84"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="KlR-GN-cJs" secondAttribute="bottom" id="UgY-y4-5eG"/>
+                <constraint firstItem="KlR-GN-cJs" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="ceJ-5f-JfP"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="headerLbl" destination="lsx-1u-7xS" id="rE9-xX-FXj"/>
+                <outlet property="hideBtn" destination="0rQ-jI-uJ6" id="4nz-p5-CVc"/>
+            </connections>
+            <point key="canvasLocation" x="181.15942028985509" y="-116.85267857142857"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="headerCellcolour">
+            <color red="0.35699999332427979" green="0.35699999332427979" blue="0.35699999332427979" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
