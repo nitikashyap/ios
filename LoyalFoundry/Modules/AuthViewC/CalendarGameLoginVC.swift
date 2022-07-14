@@ -8,19 +8,14 @@
 import UIKit
 
 class CalendarGameLoginVC: UIViewController {
-
     
+    //MARK: - View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
     }
     
     @IBAction func LoginBtnActn(_ sender: UIButton) {
-//        let vc = DIConfigurator.sharedInst().getLoginViewC()
-//        ContentBgView.addSubview(vc.view)
-//        vc.didMove(toParent: self)
-//        self.addChild(vc)
+        
     }
-    
 }

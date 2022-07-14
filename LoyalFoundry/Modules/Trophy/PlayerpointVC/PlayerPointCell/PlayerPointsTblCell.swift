@@ -14,6 +14,9 @@ class PlayerPointsTblCell: UITableViewCell {
     @IBOutlet weak var timeLbl: UILabel!
     @IBOutlet weak var pointLbl: UILabel!
     
+    @IBOutlet weak var scopeLbl: UILabel!
+    
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()

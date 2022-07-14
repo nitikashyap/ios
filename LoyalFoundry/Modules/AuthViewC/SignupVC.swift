@@ -9,12 +9,13 @@ import UIKit
 
 class SignupVC: UIViewController {
     
-    
+    //MARK: - All IBOutlets
     @IBOutlet weak var userView: UIView!
     @IBOutlet weak var EmailView: UIView!
     @IBOutlet weak var PasswdView: UIView!
     @IBOutlet weak var bgView: UIView!
     
+    //MARK: - View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         userView.layer.cornerRadius = 5
@@ -24,21 +25,15 @@ class SignupVC: UIViewController {
         bgView.clipsToBounds = true
         bgView.layer.maskedCorners = [.layerMaxXMinYCorner, .layerMinXMinYCorner]
         self.navigationController?.isNavigationBarHidden = true
-        // Do any additional setup after loading the view.
     }
     
-    
     //MARK: Button Action
-     
     @IBAction func signupBtnActn(_ sender: UIButton) {
         let verifyEmailVC = DIConfigurator.sharedInst().getVerifyEmailVC()
         self.navigationController?.pushViewController(verifyEmailVC, animated: true)
     }
     
-    
     @IBAction func loinBtnActn(_ sender: UIButton) {
-        let loginViewC = DIConfigurator.sharedInst().getLoginViewC()
         self.navigationController?.popViewController(animated: true)
     }
-    
 }

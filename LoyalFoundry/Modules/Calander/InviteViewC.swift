@@ -3,7 +3,7 @@
 //  LoyalFoundry
 //
 //  Created by cst on 24/06/22.
- 
+
 
 import UIKit
 
@@ -12,11 +12,14 @@ protocol back2home{
 }
 
 class InviteViewC: UIViewController {
-
+    
+    //MARK: - All IBOutlets
     @IBOutlet weak var bgView: UIView!
     
-     var delegate:back2home?
+    //MARK: - All Properties
+    var delegate:back2home?
     
+    //MARK: - View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.isNavigationBarHidden = true
@@ -24,22 +27,15 @@ class InviteViewC: UIViewController {
         bgView.layer.cornerRadius = 25
         bgView.layer.maskedCorners = [.layerMaxXMinYCorner, .layerMinXMinYCorner]
         bgView.clipsToBounds = true
-        // Do any additional setup after loading the view.
     }
     
- 
-   //MARK: Button Action
+    //MARK: All IBActions
     @IBAction func YesBtnActn(_ sender: UIButton) {
-    // DIConfigurator.sharedInst().getRootViewC(.Tabbar, identifer: TabVC.className)
         self.delegate?.navtohome()
         dismiss(animated: true, completion: nil)
-    
     }
-    
     
     @IBAction func dismissBtnActn(_ sender: UIButton) {
         dismiss(animated: true, completion: nil)
     }
-    
-    
 }

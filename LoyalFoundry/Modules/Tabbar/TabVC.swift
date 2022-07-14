@@ -8,32 +8,32 @@
 import UIKit
 
 class TabVC: UIViewController {
-
+    
+    //MARK: - All IBOutlets
     @IBOutlet weak var ContentView: UIView!
     @IBOutlet weak var calenderBtn: UIButton!
     @IBOutlet weak var chatBtn: UIButton!
     @IBOutlet weak var camreBtn: UIButton!
     @IBOutlet weak var trophyBtn: UIButton!
     @IBOutlet weak var personBtn: UIButton!
+    @IBOutlet weak var bgView: UIView!
+    @IBOutlet weak var constantWidth: NSLayoutConstraint!
+    @IBOutlet weak var navigationImage: UIImageView!
     
+    //MARK: - All Properties
     var value:Int = 0
-    
     var imagee:UIImage!
     
+    //MARK: - View Life Cycle
     override func viewDidLoad() {
-        
         super.viewDidLoad()
-//        calenderBtn.setImage(UIImage(named: "045-Calendar12121"), for: .normal)
+        navigationImage.isHidden = true
         chatBtn.setImage(UIImage(named: "chat2"), for: .normal)
         trophyBtn.setImage(UIImage(named: "trophy2"), for: .normal)
         personBtn.setImage(UIImage(named: "person2"), for: .normal)
-        camreBtn.setImage(UIImage(named: "camera2"), for: .normal)
-        
-        
+        camreBtn.setImage(UIImage(named: "binocular2"), for: .normal)
         imagee = UIImage(named: "calander2")
-    
-        if let button = self.view.viewWithTag(value) as? UIButton
-        {
+        if let button = self.view.viewWithTag(value) as? UIButton{
             button.transform = button.transform.translatedBy(x: 0, y: 30)
         }
         calenderBtn.transform = calenderBtn.transform.translatedBy(x: 0, y: -30)
@@ -46,18 +46,30 @@ class TabVC: UIViewController {
         }
         calenderBtn.tag = 1
         value = calenderBtn.tag
-
-        // Do any additional setup after loading the view.
+        self.controllerMode()
     }
     
+    //MARK: - All Functionalities
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        super.viewWillTransition(to: size, with: coordinator)
+        self.controllerMode()
+    }
     
-    
+    private func controllerMode() {
+        if UIDevice.current.orientation.isLandscape {
+            constantWidth.constant = 500
+            navigationImage.isHidden = false
+            bgView.backgroundColor = UIColor.clear
+        } else {
+            constantWidth.constant = 700
+            navigationImage.isHidden = true
+            bgView.backgroundColor = UIColor.colorWith(hexString: .backGreenColor)
+        }
+    }
     
     //MARK: Button Action
-    
     @IBAction func CalanderActn(_ sender: UIButton) {
-        if let button = self.view.viewWithTag(value) as? UIButton
-        {
+        if let button = self.view.viewWithTag(value) as? UIButton{
             button.transform = button.transform.translatedBy(x: 0, y: 30)
             button.setImage(imagee, for: .normal)
         }
@@ -73,8 +85,7 @@ class TabVC: UIViewController {
     }
     
     @IBAction func ChatBtnActn(_ sender: UIButton) {
-        if let button = self.view.viewWithTag(value) as? UIButton
-        {
+        if let button = self.view.viewWithTag(value) as? UIButton{
             button.transform = button.transform.translatedBy(x: 0, y: 30)
             button.setImage(imagee, for: .normal)
         }
@@ -90,14 +101,13 @@ class TabVC: UIViewController {
     }
     
     @IBAction func CameraBtnActn(_ sender: UIButton) {
-        if let button = self.view.viewWithTag(value) as? UIButton
-        {
+        if let button = self.view.viewWithTag(value) as? UIButton{
             button.transform = button.transform.translatedBy(x: 0, y: 30)
             button.setImage(imagee, for: .normal)
         }
         imagee = sender.image(for: .normal)
         camreBtn.transform = camreBtn.transform.translatedBy(x: 0, y: -30)
-        camreBtn.setImage(UIImage(named: "camera1"), for: .normal)
+        camreBtn.setImage(UIImage(named: "binocular1"), for: .normal)
         let camera = self.storyboard?.instantiateViewController(withIdentifier: "CameraVC")as! CameraVC
         self.ContentView.addSubview(camera.view)
         camera.didMove(toParent: self)
@@ -107,8 +117,7 @@ class TabVC: UIViewController {
     }
     
     @IBAction func TrophyActn(_ sender: UIButton) {
-        if let button = self.view.viewWithTag(value) as? UIButton
-        {
+        if let button = self.view.viewWithTag(value) as? UIButton{
             button.transform = button.transform.translatedBy(x: 0, y: 30)
             button.setImage(imagee, for: .normal)
         }
@@ -126,8 +135,7 @@ class TabVC: UIViewController {
     }
     
     @IBAction func PersonBtnActn(_ sender: UIButton) {
-        if let button = self.view.viewWithTag(value) as? UIButton
-        {
+        if let button = self.view.viewWithTag(value) as? UIButton{
             button.transform = button.transform.translatedBy(x: 0, y: 30)
             button.setImage(imagee, for: .normal)
         }

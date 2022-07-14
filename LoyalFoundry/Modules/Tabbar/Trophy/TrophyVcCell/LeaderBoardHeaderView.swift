@@ -10,8 +10,6 @@ import UIKit
 class LeaderBoardHeaderView: UITableViewHeaderFooterView {
 
     @IBOutlet weak var positionBgView: UIView!
-    
-    
     @IBOutlet weak var headerBtn: UIButton!
     
 }

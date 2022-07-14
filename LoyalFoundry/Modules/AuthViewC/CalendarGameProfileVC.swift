@@ -9,18 +9,13 @@ import UIKit
 
 class CalendarGameProfileVC: UIViewController {
 
+    //MARK: - View Liye Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
-    
 
     @IBAction func profileBtnActn(_ sender: UIButton) {
-//        let vc = DIConfigurator.sharedInst().getPersonVC()
-//
-//        self.navigationController?.pushViewController(vc, animated: true)
         
     }
-    
 }

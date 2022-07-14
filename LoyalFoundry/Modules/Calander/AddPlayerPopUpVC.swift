@@ -9,37 +9,26 @@ import UIKit
 import Alamofire
 
 class AddPlayerPopUpVC: UIViewController {
-
     
+    //MARK: - All IBOutlets
     @IBOutlet weak var bgView: UIView!
     
+    //MARK: - View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         bgView.layer.cornerRadius = 25
-        
         bgView.clipsToBounds = true
-        
-        // Do any additional setup after loading the view.
     }
     
-
-    @IBAction func yesBtnActn(_ sender: UIButton) {
-//        self.dismiss(animated: true) {
-//    
-//                let vc1 = DIConfigurator.sharedInst().getInviteViewC()
-//                vc1.modalTransitionStyle = .crossDissolve
-//                vc1.modalPresentationStyle = .overCurrentContext
-//                self.navigationController?.present(vc1, animated: true, completion: nil)
+    //MARK: - All IBActions
+    @IBAction func yesActnBtn(_ sender: UIButton) {
         let vc = DIConfigurator.sharedInst().getInviteViewC()
         vc.modalTransitionStyle = .crossDissolve
         vc.modalPresentationStyle = .overCurrentContext
         self.present(vc, animated: true, completion: nil)
-        
     }
     
-
-    @IBAction func noAcrnBtn(_ sender: UIButton) {
-        
+    @IBAction func noActnBtn(_ sender: UIButton) {
         self.dismiss(animated: true, completion: nil)
     }
 }

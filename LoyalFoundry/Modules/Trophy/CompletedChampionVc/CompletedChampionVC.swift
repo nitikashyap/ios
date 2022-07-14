@@ -14,6 +14,7 @@ class CompletedChampionVC: BaseViewC {
     var targetlbL = ["Bow","Shotgun","Rifle"]
     var pointlbl = ["13","25","5"]
     var timeLbll = ["12:45pm","12:10pm","12:18pm"]
+    var scope = ["5x","0x","3x"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -58,6 +59,7 @@ extension CompletedChampionVC: UITableViewDelegate,UITableViewDataSource {
             allPoint.targetLbl.text = targetlbL[indexPath.row - 1]
             allPoint.pointLbl.text = pointlbl[indexPath.row - 1]
             allPoint.timeLbl.text = timeLbll[indexPath.row - 1]
+            allPoint.scopeLbl.text = scope[indexPath.row - 1]
             if indexPath.row == 3{
             allPoint.layer.cornerRadius = 8
             allPoint.layer.maskedCorners = [.layerMaxXMaxYCorner, .layerMinXMaxYCorner]

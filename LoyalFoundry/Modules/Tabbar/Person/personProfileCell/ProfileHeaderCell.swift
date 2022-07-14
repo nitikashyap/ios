@@ -9,7 +9,6 @@ import UIKit
 
 class ProfileHeaderCell: UITableViewHeaderFooterView {
 
-     
     @IBOutlet weak var profileHeaderLbl: UILabel!
     
 }

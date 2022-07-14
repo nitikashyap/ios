@@ -9,9 +9,7 @@ import UIKit
 
 class CalanderHeadeCell: UITableViewHeaderFooterView {
 
-    
     @IBOutlet weak var headerLbl: UILabel!
-    
-    
     @IBOutlet weak var hideBtn: UIButton!
+    
 }

@@ -19,5 +19,5 @@ enum ColorHexString: String {
     case RED                        =   "FF0000"
     case ORANGE                     =   "FFA500"
     case GREEN                      =   "00FF00"
-    
+    case backGreenColor             =   "333D21"
 }

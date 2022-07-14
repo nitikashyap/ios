@@ -9,30 +9,33 @@ import UIKit
 
 class PersonVC: BaseViewC {
     
-    @IBOutlet weak var personTabl: UITableView!
+    @IBOutlet weak var personTabl: UITableView! {
+        didSet {
+            personTabl.delegate = self
+            personTabl.dataSource = self
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.profilenavBar(title: "Profile")
-        personTabl.delegate = self
-        personTabl.dataSource = self
-        
-        personTabl.register(UINib(nibName: "ProfileHeaderCell", bundle: nil), forHeaderFooterViewReuseIdentifier: "ProfileHeaderCell")
-        personTabl.register(nib: TrophyCell.className)
+        personTabl.register(UINib(nibName: ProfileHeaderCell.className, bundle: nil), forHeaderFooterViewReuseIdentifier: ProfileHeaderCell.className)
+        personTabl.register(nib: TrophyTblClnCell.className)
         personTabl.register(nib: PersonalRecordCell.className)
         personTabl.register(nib: ProfileDetailCell.className)
-        // Do any additional setup after loading the view.
     }
 }
-//MARK: class Extension
+
+//MARK: UITableViewDelegate & UITableViewDataSource
 extension PersonVC: UITableViewDelegate,UITableViewDataSource{
+    
     func numberOfSections(in tableView: UITableView) -> Int {
         return 3
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if section == 0{
-            return 2
+            return 1
         }else if section == 1{
             return 1
         }else{
@@ -54,6 +57,7 @@ extension PersonVC: UITableViewDelegate,UITableViewDataSource{
         
         return headercell
     }
+    
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
         return 30
     }
@@ -68,18 +72,11 @@ extension PersonVC: UITableViewDelegate,UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.section == 0{
-            let cell = tableView.dequeueReusableCell(withIdentifier: "TrophyCell")as! TrophyCell
-            cell.titleTopHeight.constant = 21
-            if indexPath.row == 1{
-                cell.leftBtn.isHidden = true
-                cell.rightBtn.isHidden = true
-                cell.viewline.isHidden = true
-                cell.imageTrophy.image = UIImage(named: "BlueImage")
-                cell.imageTrophy2.image = UIImage(named: "BlueImage")
-                cell.titleTopHeight.constant = 12
-            }
+            let cell = tableView.dequeueReusableCell(withIdentifier: "TrophyTblClnCell")as! TrophyTblClnCell
             cell.selectionStyle = .none
             return cell
+            
+            
         }else if indexPath.section == 1{
             let cell = tableView.dequeueReusableCell(withIdentifier: "PersonalRecordCell")as! PersonalRecordCell
             cell.selectionStyle = .none
@@ -93,11 +90,7 @@ extension PersonVC: UITableViewDelegate,UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if indexPath.section == 0{
-            if indexPath.row == 0{
-                return 70
-            }else{
-                return 50
-            }
+            return 120
         }else if indexPath.section == 1{
             return UITableView.automaticDimension
         }else{

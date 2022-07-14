@@ -15,6 +15,8 @@ class AllPlayerPointCell: UITableViewCell {
     @IBOutlet weak var timeLbl: UILabel!
     
     
+    @IBOutlet weak var scopeLbl: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

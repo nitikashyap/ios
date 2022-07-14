@@ -10,6 +10,10 @@
 		0C1ACA2F286CC65E00126628 /* FriendListViewC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1ACA2E286CC65E00126628 /* FriendListViewC.swift */; };
 		0C1ACA33286D914A00126628 /* tableViewDemoCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1ACA31286D914A00126628 /* tableViewDemoCellTableViewCell.swift */; };
 		0C1ACA34286D914A00126628 /* tableViewDemoCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C1ACA32286D914A00126628 /* tableViewDemoCellTableViewCell.xib */; };
+		0C1FA8CA287411FF006A01F3 /* TrophyTblClnCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1FA8C8287411FF006A01F3 /* TrophyTblClnCell.swift */; };
+		0C1FA8CB287411FF006A01F3 /* TrophyTblClnCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C1FA8C9287411FF006A01F3 /* TrophyTblClnCell.xib */; };
+		0C1FA8CE2874147F006A01F3 /* TrophyCllnCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C1FA8CC2874147F006A01F3 /* TrophyCllnCell.swift */; };
+		0C1FA8CF2874147F006A01F3 /* TrophyCllnCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C1FA8CD2874147F006A01F3 /* TrophyCllnCell.xib */; };
 		0C5CD239285CA407005F5794 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C5CD238285CA407005F5794 /* AppDelegate.swift */; };
 		0C5CD23B285CA407005F5794 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C5CD23A285CA407005F5794 /* SceneDelegate.swift */; };
 		0C5CD23D285CA407005F5794 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C5CD23C285CA407005F5794 /* ViewController.swift */; };
@@ -141,8 +145,6 @@
 		0CD103D02861DBC400F23CBC /* PersonalRecordCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CD103CE2861DBC400F23CBC /* PersonalRecordCell.xib */; };
 		0CD103D32861E34600F23CBC /* ProfileDetailCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD103D12861E34600F23CBC /* ProfileDetailCell.swift */; };
 		0CD103D42861E34600F23CBC /* ProfileDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CD103D22861E34600F23CBC /* ProfileDetailCell.xib */; };
-		0CD103D72861E58300F23CBC /* TrophyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD103D52861E58200F23CBC /* TrophyCell.swift */; };
-		0CD103D82861E58300F23CBC /* TrophyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CD103D62861E58200F23CBC /* TrophyCell.xib */; };
 		0CD103DA2862438A00F23CBC /* CreatGameVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD103D92862438A00F23CBC /* CreatGameVC.swift */; };
 		0CD103DC2862466800F23CBC /* PastGamePlayerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD103DB2862466800F23CBC /* PastGamePlayerVC.swift */; };
 		0CD103DE2862488500F23CBC /* PastGameheadercell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CD103DD2862488500F23CBC /* PastGameheadercell.swift */; };
@@ -182,6 +184,10 @@
 		0C1ACA2E286CC65E00126628 /* FriendListViewC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendListViewC.swift; sourceTree = "<group>"; };
 		0C1ACA31286D914A00126628 /* tableViewDemoCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tableViewDemoCellTableViewCell.swift; sourceTree = "<group>"; };
 		0C1ACA32286D914A00126628 /* tableViewDemoCellTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = tableViewDemoCellTableViewCell.xib; sourceTree = "<group>"; };
+		0C1FA8C8287411FF006A01F3 /* TrophyTblClnCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrophyTblClnCell.swift; sourceTree = "<group>"; };
+		0C1FA8C9287411FF006A01F3 /* TrophyTblClnCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrophyTblClnCell.xib; sourceTree = "<group>"; };
+		0C1FA8CC2874147F006A01F3 /* TrophyCllnCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrophyCllnCell.swift; sourceTree = "<group>"; };
+		0C1FA8CD2874147F006A01F3 /* TrophyCllnCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrophyCllnCell.xib; sourceTree = "<group>"; };
 		0C5CD235285CA407005F5794 /* LoyalFoundry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoyalFoundry.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0C5CD238285CA407005F5794 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0C5CD23A285CA407005F5794 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -315,8 +321,6 @@
 		0CD103CE2861DBC400F23CBC /* PersonalRecordCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonalRecordCell.xib; sourceTree = "<group>"; };
 		0CD103D12861E34600F23CBC /* ProfileDetailCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDetailCell.swift; sourceTree = "<group>"; };
 		0CD103D22861E34600F23CBC /* ProfileDetailCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileDetailCell.xib; sourceTree = "<group>"; };
-		0CD103D52861E58200F23CBC /* TrophyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrophyCell.swift; sourceTree = "<group>"; };
-		0CD103D62861E58200F23CBC /* TrophyCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrophyCell.xib; sourceTree = "<group>"; };
 		0CD103D92862438A00F23CBC /* CreatGameVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatGameVC.swift; sourceTree = "<group>"; };
 		0CD103DB2862466800F23CBC /* PastGamePlayerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastGamePlayerVC.swift; sourceTree = "<group>"; };
 		0CD103DD2862488500F23CBC /* PastGameheadercell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PastGameheadercell.swift; sourceTree = "<group>"; };
@@ -767,8 +771,10 @@
 			children = (
 				0CD103C92861D84400F23CBC /* ProfileHeaderCell.swift */,
 				0CD103CB2861D85400F23CBC /* ProfileHeaderCell.xib */,
-				0CD103D52861E58200F23CBC /* TrophyCell.swift */,
-				0CD103D62861E58200F23CBC /* TrophyCell.xib */,
+				0C1FA8C8287411FF006A01F3 /* TrophyTblClnCell.swift */,
+				0C1FA8C9287411FF006A01F3 /* TrophyTblClnCell.xib */,
+				0C1FA8CC2874147F006A01F3 /* TrophyCllnCell.swift */,
+				0C1FA8CD2874147F006A01F3 /* TrophyCllnCell.xib */,
 				0CD103CD2861DBC400F23CBC /* PersonalRecordCell.swift */,
 				0CD103CE2861DBC400F23CBC /* PersonalRecordCell.xib */,
 				0CD103D12861E34600F23CBC /* ProfileDetailCell.swift */,
@@ -1043,17 +1049,18 @@
 				0CC3CFA628634F750009659A /* CompletedGameCell.xib in Resources */,
 				0CD103FC2862EA6D00F23CBC /* AddNumbeCell.xib in Resources */,
 				0CC3CFD328648C740009659A /* Chat.storyboard in Resources */,
+				0C1FA8CF2874147F006A01F3 /* TrophyCllnCell.xib in Resources */,
 				0C5CD326286045EF005F5794 /* Roboto-Medium.ttf in Resources */,
 				0C5CD31428604585005F5794 /* Horizon Type - AcherusFeral-Bold.otf in Resources */,
 				0C5CD2A8285CA4E5005F5794 /* error.json in Resources */,
 				0CC3CFE92864ECED0009659A /* ProfileNavBar.xib in Resources */,
+				0C1FA8CB287411FF006A01F3 /* TrophyTblClnCell.xib in Resources */,
 				0CD103D42861E34600F23CBC /* ProfileDetailCell.xib in Resources */,
 				0C5CD323286045EF005F5794 /* Roboto-BlackItalic.ttf in Resources */,
 				0C5CD322286045EF005F5794 /* Roboto-LightItalic.ttf in Resources */,
 				0C5CD32B286045EF005F5794 /* Roboto-ThinItalic.ttf in Resources */,
 				0C5CD321286045EF005F5794 /* Roboto-Bold.ttf in Resources */,
 				0C1ACA34286D914A00126628 /* tableViewDemoCellTableViewCell.xib in Resources */,
-				0CD103D82861E58300F23CBC /* TrophyCell.xib in Resources */,
 				0CC3CFA22863490C0009659A /* CompletedHeaderCell.xib in Resources */,
 				0CD103F42862BB1800F23CBC /* InviteHeaderCell.xib in Resources */,
 				0CD1041F286322CA00F23CBC /* ChatCell.xib in Resources */,
@@ -1152,6 +1159,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C1FA8CE2874147F006A01F3 /* TrophyCllnCell.swift in Sources */,
 				0C5CD33428608A99005F5794 /* CurrentCellTableViewCell.swift in Sources */,
 				0C5CD2B6285CA4E5005F5794 /* Enum+FontSize.swift in Sources */,
 				0C5CD2BE285CA4E5005F5794 /* UIColor+Additions.swift in Sources */,
@@ -1196,6 +1204,7 @@
 				0C5CD34B286199B7005F5794 /* CalendarGameLoginVC.swift in Sources */,
 				0C5CD2C4285CA4E5005F5794 /* UICollectionView+Additions.swift in Sources */,
 				0C5CD2BA285CA4E5005F5794 /* Enum+Alpha.swift in Sources */,
+				0C1FA8CA287411FF006A01F3 /* TrophyTblClnCell.swift in Sources */,
 				0C5CD257285CA4BC005F5794 /* BaseViewC.swift in Sources */,
 				0C5CD29D285CA4E5005F5794 /* Reachability.swift in Sources */,
 				0C5CD2A4285CA4E5005F5794 /* AWSS3Manager.swift in Sources */,
@@ -1221,7 +1230,6 @@
 				0C5CD2A6285CA4E5005F5794 /* GSImageViewerController.swift in Sources */,
 				0CC3CFAF286393230009659A /* ChmapionHeaderCell.swift in Sources */,
 				0C5CD2FF285F4361005F5794 /* ChatVC.swift in Sources */,
-				0CD103D72861E58300F23CBC /* TrophyCell.swift in Sources */,
 				0CD103DA2862438A00F23CBC /* CreatGameVC.swift in Sources */,
 				0CD1040D286316F000F23CBC /* PlayerPointVC.swift in Sources */,
 				0C5CD2A2285CA4E5005F5794 /* SweetAlert.swift in Sources */,
@@ -1404,15 +1412,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1.6;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.9;
 				DEVELOPMENT_TEAM = KCFN7Q35KN;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LoyalFoundry/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -1420,10 +1429,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.5;
+				MARKETING_VERSION = 1.9;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ShootReleasee.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = ShootReleasee_Distribution;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -1436,15 +1445,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1.6;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.9;
 				DEVELOPMENT_TEAM = KCFN7Q35KN;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = LoyalFoundry/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -1452,10 +1462,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.5;
+				MARKETING_VERSION = 1.9;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ShootReleasee.app;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = ShootReleasee_Distribution;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;

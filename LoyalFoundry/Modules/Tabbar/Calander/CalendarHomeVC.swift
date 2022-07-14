@@ -13,7 +13,6 @@ class CalendarHomeVC: BaseViewC {
     @IBOutlet weak var loginVw: UIView!
     @IBOutlet weak var loginView: UIView!
     
-    var isopen:Bool = false
     var headerlbl = ["Current","Future","Completed"]
     var scorelbl = ["Turkey Hunt 2021","Duck Hunt 2021"]
     var datetimelbl = ["Oct 14th - 17th , 2021","Nov 18th - 20th , 2021"]
@@ -23,10 +22,10 @@ class CalendarHomeVC: BaseViewC {
     var poinPerson = ["11","7"]
     var futuredate = ["Dec 19th - 21th ,2021"]
     var completeddate = ["Aug 23th - 25th , 2020"]
+    var isopen:Bool = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         if USER_DEFAULTS.bool(forKey: "Login"){
             self.simpleWithImgNavBar()
             loginVw.isHidden = true
@@ -39,14 +38,12 @@ class CalendarHomeVC: BaseViewC {
         CalandetTblView.dataSource = self
         CalandetTblView.register(nib: CurrentCellTableViewCell.className)
         CalandetTblView.register(UINib(nibName: "CalanderHeadeCell", bundle: nil), forHeaderFooterViewReuseIdentifier: "CalanderHeadeCell")
-        
-        // Do any additional setup after loading the view.
     }
     
-    
+    //MARK: Button Action
     @IBAction func loginTabBtn(_ sender: UIButton) {
-        let tabVC = DIConfigurator.sharedInst().getLoginViewC()
-        self.navigationController?.pushViewController(tabVC, animated: true)
+        let loginVC = DIConfigurator.sharedInst().getLoginViewC()
+        self.navigationController?.pushViewController(loginVC, animated: true)
     }
 }
 
@@ -55,6 +52,7 @@ extension CalendarHomeVC: UITableViewDelegate,UITableViewDataSource{
     func numberOfSections(in tableView: UITableView) -> Int {
         return 3
     }
+    
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         
         let headercell = tableView.dequeueReusableHeaderFooterView(withIdentifier: "CalanderHeadeCell") as! CalanderHeadeCell
@@ -71,7 +69,7 @@ extension CalendarHomeVC: UITableViewDelegate,UITableViewDataSource{
         }
         return headercell
     }
-    
+
     
     @objc func hideBtnActn(_sender: UIButton){
         print("demo")
@@ -86,7 +84,6 @@ extension CalendarHomeVC: UITableViewDelegate,UITableViewDataSource{
             header.hideBtn.setTitle("Hide", for: .normal)
             isopen = false
         }
-        
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
@@ -126,6 +123,7 @@ extension CalendarHomeVC: UITableViewDelegate,UITableViewDataSource{
         
         return cell
     }
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         if indexPath.section == 0{

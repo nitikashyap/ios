@@ -8,14 +8,21 @@
 import UIKit
 
 class CurrentGameVC: BaseViewC {
-
-    @IBOutlet weak var currentGameTbl: UITableView!
     
+    //MARK: - All IBOutlets
+    @IBOutlet weak var currentGameTbl: UITableView! {
+        didSet {
+            currentGameTbl.delegate = self
+            currentGameTbl.dataSource = self
+        }
+    }
+    
+    //MARK: - All Properties
     var playerName = ["Alistair luis","Alex Ensina","Jack Calvin","Karl Xie"]
     var playerImage = [UIImage(named: "player1"),UIImage(named: "player2"),UIImage(named: "player3"),UIImage(named: "player4")]
-    
     var chackedImage = [UIImage(named: "Checkedd"),UIImage(named: "Checkedd"),UIImage(named: "Checked"),UIImage(named: "cancel")]
     
+    //MARK: - View Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.isNavigationBarHidden = true
@@ -23,22 +30,22 @@ class CurrentGameVC: BaseViewC {
         currentGameTbl.delegate = self
         currentGameTbl.dataSource = self
         currentGameTbl.register(nib: CurrentPlayerCell.className)
-        currentGameTbl.register(UINib(nibName: "CurrentPlayerHeader", bundle: nil), forHeaderFooterViewReuseIdentifier: "CurrentPlayerHeader")
-        // Do any additional setup after loading the view.
+        currentGameTbl.register(UINib(nibName: CurrentPlayerHeader.className, bundle: nil), forHeaderFooterViewReuseIdentifier: CurrentPlayerHeader.className)
     }
     
 }
 
-//MARK: Class Extension
-
+//MARK: UITableViewDelegate & UITableViewDataSource
 extension CurrentGameVC: UITableViewDelegate,UITableViewDataSource{
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return playerName.count
     }
+    
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         
         let headercell = tableView.dequeueReusableHeaderFooterView(withIdentifier: "CurrentPlayerHeader") as! CurrentPlayerHeader
@@ -46,6 +53,7 @@ extension CurrentGameVC: UITableViewDelegate,UITableViewDataSource{
         headercell.bgView.clipsToBounds = true
         return headercell
     }
+    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 80
     }
@@ -58,6 +66,4 @@ extension CurrentGameVC: UITableViewDelegate,UITableViewDataSource{
         cell.selectionStyle  = .none
         return cell
     }
-    
-    
 }

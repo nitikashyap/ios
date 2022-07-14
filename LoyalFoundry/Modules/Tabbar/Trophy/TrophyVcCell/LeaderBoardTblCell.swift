@@ -8,7 +8,7 @@
 import UIKit
 
 class LeaderBoardTblCell: UITableViewCell {
-
+    
     @IBOutlet weak var playerBgView: UIView!
     @IBOutlet weak var positionLbl: UILabel!
     @IBOutlet weak var playerImg: UIImageView!
@@ -20,11 +20,9 @@ class LeaderBoardTblCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
     }
-
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
     
 }
